@@ -6,7 +6,7 @@
         public int colunas { get; set; }
         private Peca[,] pecas;
 
-        public Tabuleiro (int linhas, int colunas)
+        public Tabuleiro(int linhas, int colunas)
         {
             this.colunas = colunas;
             this.linhas = linhas;
@@ -17,12 +17,12 @@
         {
             return pecas[linha, coluna];
         }
-        
+
         public Peca peca(Posicao pos)
         {
             return pecas[pos.linha, pos.coluna];
         }
-        
+
         public bool existePeca(Posicao pos)
         {
             validarPosicao(pos);
@@ -41,7 +41,7 @@
 
         public Peca retirarPeca(Posicao pos)
         {
-            if(peca(pos) == null)
+            if (peca(pos) == null)
             {
                 return null;
             }
@@ -53,7 +53,7 @@
 
         public bool posicaoValida(Posicao pos)
         {
-            if (pos.linha < 0 || pos.linha >= this.linhas || pos.coluna<0 || pos.coluna>= this.colunas)
+            if (pos.linha < 0 || pos.linha >= this.linhas || pos.coluna < 0 || pos.coluna >= this.colunas)
             {
                 return false;
             }

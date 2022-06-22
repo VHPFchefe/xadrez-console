@@ -4,7 +4,7 @@ namespace xadrez
 {
     class Rei : Peca
     {
-        public Rei (Tabuleiro tab, Cor cor): base(tab, cor)
+        public Rei(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
 
         }
@@ -22,27 +22,27 @@ namespace xadrez
 
             // N
             pos.definirValores(posicao.linha - 1, posicao.coluna);
-            if(tab.posicaoValida(pos) && podeMover(pos))
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
 
             // NE
-            pos.definirValores(posicao.linha - 1, posicao.coluna +1 );
+            pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
 
             // E
-            pos.definirValores(posicao.linha , posicao.coluna +1 );
+            pos.definirValores(posicao.linha, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
 
             // SE
-            pos.definirValores(posicao.linha + 1, posicao.coluna+1);
+            pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
@@ -70,7 +70,7 @@ namespace xadrez
             }
 
             // NW
-            pos.definirValores(posicao.linha -1, posicao.coluna - 1);
+            pos.definirValores(posicao.linha - 1, posicao.coluna - 1);
             if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;

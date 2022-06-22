@@ -19,7 +19,7 @@
 
         public override string ToString()
         {
-            return 
+            return
                 linha
                 + ", "
                 + coluna;
