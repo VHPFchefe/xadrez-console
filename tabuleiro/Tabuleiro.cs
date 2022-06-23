@@ -10,7 +10,7 @@
         {
             this.colunas = colunas;
             this.linhas = linhas;
-            this.pecas = new Peca[linhas, colunas];
+            pecas = new Peca[linhas, colunas];
         }
 
         public Peca peca(int linha, int coluna)
